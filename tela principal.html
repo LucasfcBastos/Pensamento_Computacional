@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>BITBUILDERS</h1>
+    <main class="squard">
+        <div class="camp selecionado" id="loginForm">
+            <p class="text">Fazer Login</p>
+            <input type="text" id="username" placeholder=" Seu nome de usuario">
+            <input type="password" id="password" class="password" placeholder=" Seu senha">
+            <br>
+            <button class="en" onclick="login()">Entrar</button>
+            <br>
+            <button class="mu" onclick="show('signupForm', 'loginForm')">Fazer Cadastro</button>
+        </div>
+        <div class="camp" id="signupForm" style="display: none;">
+            <p class="text">Fazer Cadastro</p>
+            <input type="text" id="newUsername" placeholder=" Novo nome de usuario">
+            <input type="password" id="newPassword" class="password" placeholder=" Nova senha">
+            <br>
+            <br>
+            <button class="en" onclick="register()">Cadastrar</button>
+            <br>
+            <button class="mu" onclick="show('loginForm', 'signupForm')">Realizar Login</button>
+        </div>
+    </main>
+</body>
+</html>
